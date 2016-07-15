@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f3eff0;
+}
+.box {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.head {
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  height: 60px;
+  background-color: rgba(169, 5, 6, 0.9);
+  text-align: center;
+  line-height: 60px;
+}
+.head h2 {
+  font-weight: 500;
+}
+.content {
+  width: 100%;
+  box-sizing: border-box;
+}
+.inputUser {
+  display: block;
+  width: 90%;
+  height: 56px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.input1 {
+  margin-top: 22px;
+  margin-bottom: 3px;
+  display: block;
+  width: 90%;
+  height: 56px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.input2 {
+  display: block;
+  width: 90%;
+  height: 56px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+label {
+  height: 30px;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  color: #5b5b5b;
+  font-weight: bold;
+  line-height: 30px;
+}
+label input[type="checkbox"] {
+  display: inline-block;
+  width: 10%;
+  height: 30px;
+  vertical-align: top;
+  margin-left: 5%;
+  margin-right: -5px;
+  color: #89ce33;
+}
+label a {
+  text-decoration: none;
+  color: #fe1c5b;
+  margin-left: 4%;
+}
+.btn1 {
+  background: linear-gradient(180deg, #d5090a 0%, #ad0505 100%);
+  margin-top: 42px;
+  box-shadow: 2px 2px 0 #a90506;
+  width: 90%;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  margin-left: 5%;
+  border-radius: 6px;
+  border: none;
+}
+.btn2 {
+  background: linear-gradient(180deg, #5c5c5c 0%, #252525 100%);
+  margin-top: 6px;
+  box-shadow: 2px 2px 0px #a10b62;
+  width: 90%;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  margin-left: 5%;
+  border-radius: 6px;
+  border: none;
+}
+.btnA {
+  width: 90%;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  margin-left: 5%;
+  border-radius: 6px;
+  border: none;
+}

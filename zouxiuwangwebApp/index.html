@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<script src="js/jquery-2.1.1.min.js"></script>		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				商品详情
+			</div>
+			<div class="content">
+				<ul>
+					<li id="itemList1"></li>
+					<li id="itemList2"></li>
+					<li id="itemList3"></li>
+					<li id="itemList4"></li>
+					<li id="itemList5"></li>
+					<li id="itemList6"></li>
+					<li id="itemList7"></li>
+					<li id="itemList8"></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//掌握真实数据接口的使用
+		$(document).ready(function(){
+			var list1=document.getElementById("itemList1");
+			var list2=document.getElementById("itemList2");
+			var list3=document.getElementById("itemList3");
+			var list4=document.getElementById("itemList4");
+			var list5=document.getElementById("itemList5");
+			var list6=document.getElementById("itemList6");
+			var list7=document.getElementById("itemList7");
+			var list8=document.getElementById("itemList8");
+			$.ajax({
+				url:"http://datainfo.duapp.com/shopdata/getBanner.php",
+				type:"get",
+				data:"",
+				dataType:"jsonp",
+				success:function(data){
+					console.log(data);
+					for(var i=0;i<data.length;i++){
+						console.log(data[i].goodsName+data[i].goodsBenUrl+data[i].goodsID);
+					}
+					var oImgUrl = JSON.parse(data[0].goodsBenUrl);
+					var oImgUrl2=JSON.parse(data[1].goodsBenUrl);
+					var oImgUrl3=JSON.parse(data[2].goodsBenUrl);
+					var oImgUrl4=JSON.parse(data[3].goodsBenUrl);
+					var _html="<img src="+oImgUrl[0]+">" + "<p>"+data[0].goodsName+"</P>";
+					list1.innerHTML=_html;
+					var _content2 = "<img src="+oImgUrl2[0]+">" + "<p>"+data[1].goodsName+"</P>";
+					list2.innerHTML=_content2;
+					var _content3 = "<img src="+oImgUrl3[0]+">" + "<p>"+data[2].goodsName+"</P>";
+					list3.innerHTML=_content3;
+					var _content4 = "<img src="+oImgUrl4[0]+">" + "<p>"+data[3].goodsName+"</P>";
+					list4.innerHTML=_content4;
+					list5.innerHTML=_html;
+					list6.innerHTML=_content2;
+					list7.innerHTML=_content3;
+					list8.innerHTML=_content4;
+				},
+			});
+			$(window).on('scroll',function(){
+				// 1>当滚动到接近底部时，重新请求服务器数据
+				var scrollTop = $(window).scrollTop();
+				var winHeight = $(window).height();
+				var docHeight = $(document).height();
+				console.log('scrollTop:',scrollTop,'docH:',docHeight,'winH:',winHeight);
+				if(scrollTop+winHeight+100>=docHeight){
+					// 重新请求服务器数据
+					$.ajax({
+						url:"http://datainfo.duapp.com/shopdata/getBanner.php",
+						type:"get",
+						dataType:"jsonp",
+						data:"",
+						success:function(res){
+							console.log(res);
+							for(var i=0;i<res.length;i++){
+								$('<li/>').html("<img src="+JSON.parse(res[i].goodsBenUrl)[0]+">" + "<p>"+res[i].goodsName+"</P>").appendTo($("ul"));
+							}
+							// $.each(res,function(idx,obj){						
+							// 	console.log(idx,obj);
+							// 	console.log(132);
+								
+							// });
+						}
+					})
+				}
+			});
+		})
+	</script>
+</html>

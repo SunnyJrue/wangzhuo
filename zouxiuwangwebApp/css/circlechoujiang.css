@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 15px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #f3eff0;
+  position: relative;
+}
+.hed {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  background-color: #a90506;
+}
+.hed span:nth-child(1) img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 40%;
+  margin-left: 3%;
+}
+.hed span:nth-child(2) {
+  width: 32%;
+  height: 32%;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+}
+.hed button {
+  width: 24%;
+  height: 70%;
+  background-color: #d10909;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  right: 3%;
+  top: 14%;
+}
+.center {
+  position: relative;
+  width: 96%;
+  height: 62%;
+  background-color: #a90506;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 2%;
+}
+.center .choujiang {
+  box-sizing: border-box;
+  position: absolute;
+  width: 33%;
+  height: 33%;
+  background-color: #640000;
+  color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 12%;
+}
+.bot {
+  position: absolute;
+  width: 96%;
+  height: 25%;
+  background-color: #ff4948;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #a90506;
+}
+.bot ul {
+  width: 100%;
+}
+.bot ul li {
+  list-style: none;
+  color: #660002;
+  font-size: 18px;
+  margin-top: 4%;
+  font-weight: bold;
+  margin-left: 6%;
+  width: 90%;
+}
+.bot ul li span {
+  margin-left: 6%;
+}

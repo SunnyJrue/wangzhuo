@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品资料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/goodsInfo.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="img/goodsDetail1.jpg">
+            <span>商品资料</span>
+            <img src="img/goodsDetail2.jpg">
+            <img src="img/goodsDetail3.jpg">
+        </div>
+        <div class="content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/scroll2.jpg" ></div>
+                    <div class="swiper-slide"><img src="img/scroll2.jpg"></div>
+                    <div class="swiper-slide"><img src="img/scroll2.jpg"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination pageTab"></div>
+            </div>
+            <p class="p1">美特斯邦威 米底红色花朵印花短袖连衣裙</p>
+            <p class="p2"><span class="span1">￥85.00</span> <span style=" text-decoration:line-through;">159.00</span></p>
+            <p class="p3">尺码 ：160/84A 165/88A</p>
+            <p class="p4">数量  :  1</p>
+        </div>
+        <div class="detail">
+                <span class="circle"><img src="img/detail1.jpg" alt=""></span>
+                <span>查看商品详情</span>
+                <span class="arrow">></span>
+        </div>
+        <div class="footer">
+            <div class="button">
+                <span>放入购物袋</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,  
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+      })        
+  </script>
+</html>

@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f3eff0;
+}
+.box {
+  width: 100%;
+  height: 100%;
+}
+.head {
+  width: 100%;
+  height: 6%;
+  background-color: #a90506;
+  text-align: center;
+  padding-top: 4%;
+  position: relative;
+}
+.head .s2 {
+  position: absolute;
+  width: 7%;
+  height: 90%;
+  top: 18%;
+  left: 2%;
+}
+.head .s2 img {
+  height: 70%;
+}
+.head h2 {
+  font-size: 19px;
+  font-weight: normal;
+  color: white;
+}
+.container {
+  width: 100%;
+  height: 85%;
+  box-sizing: border-box;
+}
+.container label {
+  display: block;
+  width: 90%;
+  height: 7%;
+  margin-top: 5%;
+  background-color: white;
+  font-size: 13px;
+  color: #505050;
+  padding-left: 10px;
+  padding-top: 3%;
+  font-weight: 500;
+  margin-left: 3%;
+  text-shadow: 1px,1px,1px,#505050;
+}
+.container input {
+  display: inline-block;
+  width: 60%;
+  color: #9c9c9c;
+  height: 80%;
+  border: none;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.container .s1 {
+  color: #505050;
+  margin-left: 3px;
+  font-size: 14px;
+  text-shadow: 1px,1px,1px,#505050;
+}
+input[type="button"] {
+  background: linear-gradient(180deg, #d5090a 0%, #ad0505 100%);
+  margin-top: 34%;
+  box-shadow: 2px 2px 0 #a90506;
+  width: 90%;
+  height: 9%;
+  color: white;
+  font-size: 20px;
+  margin-left: 5%;
+  border-radius: 6px;
+  border: none;
+}
