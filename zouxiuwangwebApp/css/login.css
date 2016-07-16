@@ -28,6 +28,16 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.content .result {
+  height: 30px;
+  width: 60%;
+  margin-left: 5%;
+  color: red;
+  font-size: 14px;
+}
+.content .check2 {
+  margin-top: 30px;
+}
 .inputUser {
   display: block;
   width: 90%;
@@ -69,9 +79,7 @@ body {
   box-sizing: content-box;
   font-weight: bold;
 }
-label {
-  height: 30px;
-  margin-top: 30px;
+.checkbox {
   display: block;
   width: 100%;
   font-size: 20px;
@@ -79,7 +87,7 @@ label {
   font-weight: bold;
   line-height: 30px;
 }
-label input[type="checkbox"] {
+.checkbox input[type="checkbox"] {
   display: inline-block;
   width: 10%;
   height: 30px;
@@ -88,7 +96,7 @@ label input[type="checkbox"] {
   margin-right: -5px;
   color: #89ce33;
 }
-label a {
+.checkbox a {
   text-decoration: none;
   color: #fe1c5b;
   margin-left: 4%;
