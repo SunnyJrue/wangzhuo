@@ -1,9 +1,8 @@
 $(document).ready(function(){
     $("#sure").click(function(){
         if($("#mima").val() != $("#confirm").val()){
-            $("<p>密码不符合</p>").insertAfter($("div.contaier :nth-child(3)"));
+            $("<p>密码不符合</p>").insertAfter($(".tianjia"));
             return
-            // console.log(2323);
         }
         var info = $("name").value + $("#mima").value;
         $.ajax({
