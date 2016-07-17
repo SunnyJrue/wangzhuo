@@ -81,6 +81,97 @@ body {
   font-size: 2rem;
   padding-top: 12%;
 }
+.center .denglvjiemian {
+  display: none;
+  width: 90%;
+  height: 50%;
+  border: 1px solid gray;
+  position: relative;
+  background: rgba(255, 73, 72, 0.5);
+  margin: 0 auto;
+  top: 30%;
+  box-shadow: 2px,2px,2px,pink;
+  border-radius: 5px;
+}
+.center .denglvjiemian .inputUser {
+  display: block;
+  width: 90%;
+  height: 36px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.center .denglvjiemian .input1 {
+  margin-top: 22px;
+  margin-bottom: 3px;
+  display: block;
+  width: 90%;
+  height: 36px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.center .denglvjiemian .input2 {
+  display: block;
+  width: 90%;
+  height: 36px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  margin-left: 3%;
+  box-sizing: content-box;
+  font-weight: bold;
+}
+.center .denglvjiemian .btn1 {
+  background: linear-gradient(180deg, #d5090a 0%, #ad0505 100%);
+  box-shadow: 2px 2px 0 #a90506;
+  width: 30%;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 36%;
+  margin-top: 4%;
+  border-radius: 6px;
+  border: none;
+}
+.center .denglvjiemian .btnA {
+  width: 30%;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 36%;
+  margin-top: 4%;
+  border-radius: 6px;
+  border: none;
+}
+.center .result {
+  display: none;
+  width: 50%;
+  height: 20%;
+  padding-top: 16%;
+  border: 1px solid gray;
+  position: relative;
+  background: rgba(255, 73, 72, 0.5);
+  margin: 0 auto;
+  top: 32%;
+  text-align: center;
+  color: yellow;
+  font-size: 16px;
+  box-shadow: 2px,2px,2px,pink;
+  border-radius: 5px;
+}
 .bot {
   position: absolute;
   width: 96%;

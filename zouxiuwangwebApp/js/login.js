@@ -21,7 +21,7 @@ $(document).ready(function(){
                     var objData = {"code":newData.code,"userID":newData.userID,"password":newData.password,"userimg_url":newData.userimg_url,"sex":newData.sex};
                     var objStr = JSON.stringify(objData);
                      localStorage.setItem("denglvinfo",objStr);
-                     // window.location.href="index.html";
+                     window.location.href="index.html";
                 }
             }
         });
